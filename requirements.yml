@@ -1,6 +1,2 @@
 collections:
-- name: redhat.openshift
-  version: "4.0.1"
-- name: vmware.vmware_rest
 - name: community.general
-- name: kubevirt.core
