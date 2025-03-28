@@ -87,9 +87,7 @@
       spec:
         map:
           - destination:
-              storageClass: ocs-storagecluster-ceph-rbd
-            source:
-              id: "{{ datastore_id }}"
+              storageClass: "{{ storage_class }}"
         provider:
           destination:
             name: host
