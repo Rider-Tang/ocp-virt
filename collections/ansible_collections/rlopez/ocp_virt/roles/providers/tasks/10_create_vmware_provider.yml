@@ -12,7 +12,7 @@
           name: "{{ vmware_credentials }}"
           namespace: "{{ provider_namespace }}"
         settings:
-          vddkInitImage: 'image-registry.openshift-image-registry.svc:5000/openshift/vddk:latest'
-        type: vsphere
-        url: 'https://portal.vc.opentlc.com/sdk'
+          vddkInitImage: "{{ vddk_init_image }}"
+        type: "{{ provider_type }}"
+        url: "{{ provider_url }}"
 
