@@ -88,6 +88,8 @@
         map:
           - destination:
               storageClass: "{{ storage_class }}"
+            source:
+              id: "{{ datastore_id }}"
         provider:
           destination:
             name: host
