@@ -64,7 +64,7 @@
             name: host
             namespace: openshift-mtv
           source:
-            name: vmware
+            name: "{{ provider_name }}"
             namespace: openshift-mtv
 
 - name: Build a list of all the datastores
@@ -95,7 +95,7 @@
             name: host
             namespace: openshift-mtv
           source:
-            name: vmware
+            name: "{{ provider_name }}"
             namespace: openshift-mtv
 
 
@@ -123,7 +123,7 @@
             name: host
             namespace: openshift-mtv
           source:
-            name: vmware
+            name: "{{ provider_name }}"
             namespace: openshift-mtv
         targetNamespace: openshift-mtv
         vms: "{{ vms_for_plan_spec }}"
